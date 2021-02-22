@@ -122,18 +122,18 @@ function createHtml(data) {
     const container = document.querySelector('.api-container');
 
     // The API sends us an array full of objects. Each object represents a mission:
-    // Targetting missions 29 in the array:
+    // Targeting missions 29 in the array:
     const oneMission = data[28];
 
     console.log('---------- Mission 29 ----------');
     console.log(oneMission);
 
-    // Targetting the links object in the mission 29 object in the launches (data) array:
+    // Targeting the links object in the mission 29 object in the launches (data) array:
     const missionLinks = data[28].links;
     console.log('---------- Mission links ----------');
     console.log(missionLinks);
 
-    // Targetting the flick_images array inside the links object inside the mission object inside the launches (data) array
+    // Targeting the flick_images array inside the links object inside the mission object inside the launches (data) array
     const missionImages = data[28].links.flickr_images;
     console.log('---------- Mission images ----------');
     console.log(missionImages);
